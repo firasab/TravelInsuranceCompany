@@ -1,0 +1,25 @@
+# IntelliJ IDEA
+/.idea
+*.iml
+*.iws
+/out
+/.gradle
+/.mvn
+
+# Maven / Gradle build folders
+/target
+/build
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+
+# Environment files
+.env

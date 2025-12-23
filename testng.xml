@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Travel Insurance Suite">
+    <test name="WebPagesCheckTest">
+        <packages>
+            <package name="tests"/>
+        </packages>
+    </test>
+</suite>
