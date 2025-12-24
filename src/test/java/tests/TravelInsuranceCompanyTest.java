@@ -1,23 +1,18 @@
 package tests;
 
 import io.qameta.allure.*;
-import io.qameta.allure.testng.AllureTestNg;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import java.time.LocalDate;
 
 import static Constants.Data.URL;
 import static Constants.Locators.*;
 
-@Listeners(AllureTestNg.class)
-@Epic("Travel Insurance")
-@Feature("Web Pages Validation")
+@Epic("SanityTest")
+@Feature("TravelInsuranceCompanyTest")
 public class TravelInsuranceCompanyTest extends BaseTest {
 
     @Test
-    @Story("User selects travel dates and proceeds to passenger details")
-    @Severity(SeverityLevel.CRITICAL)
-    @Description("Verify travel insurance flow with valid dates")
+    @Description("Checking travel insurance website work flow")
     public void WebPagesCheck() {
         goToUrl(URL);
         clickOnElement(FIRST_TIME_PURCHASE_BUTTON);

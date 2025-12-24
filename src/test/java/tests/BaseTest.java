@@ -1,5 +1,8 @@
 package tests;
 
+import io.qameta.allure.Allure;
+import io.qameta.allure.AllureId;
+import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -43,6 +46,7 @@ public class BaseTest {
     public void customReporter(String msg){
         Reporter.log(msg);
         System.out.println(msg);
+        Allure.step(msg);
     }
 
     private static final Map<Integer, String[]> hebrewMonthsMap = new HashMap<>() {{
@@ -60,7 +64,6 @@ public class BaseTest {
         put(12, new String[]{"דצמבר"});
     }};
 
-    @Step("Opening URL {url}")
     public void goToUrl(String url){
         customReporter("Opening URL " + url);
         driver.get(url);
