@@ -1,5 +1,8 @@
 name: Automation Test Pipeline
 
+permissions:
+  contents: write
+
 on:
   push:
   pull_request:
