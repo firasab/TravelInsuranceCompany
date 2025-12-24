@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Dec 24 13:26:41 UTC 2025","Wed Dec 24 13:28:00 UTC 2025","78872","Automation Suite","Tests","tests.TravelInsuranceCompanyTest","tests.TravelInsuranceCompanyTest","WebPagesCheck","WebPagesCheck","Checking travel insurance website work flow"
