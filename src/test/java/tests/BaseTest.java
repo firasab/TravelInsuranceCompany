@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -59,6 +60,7 @@ public class BaseTest {
         put(12, new String[]{"דצמבר"});
     }};
 
+    @Step("Opening URL {url}")
     public void goToUrl(String url){
         customReporter("Opening URL " + url);
         driver.get(url);
