@@ -22,7 +22,15 @@ jobs:
           java-version: '17'
 
       - name: Run tests
-        run: mvn clean test
+        run: mvn clean test -Dsurefire.suiteXmlFiles=testng.xml
+
+      - name: Debug Allure results
+        run: |
+          echo "Listing target:"
+          ls -la target || true
+
+          echo "Listing allure-results:"
+          ls -la target/allure-results || true
 
       - name: Generate Allure Report
         run: mvn allure:report
@@ -31,4 +39,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: target/site/allure-maven-plugin
+          publish_dir: target/allure-report
